@@ -31,7 +31,7 @@ const ChatBox = () => {
     console.log("response data:", response.data);
     reset();
   }
-  const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+  const onKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
         if(e.key === 'Enter' && !e.shiftKey) {
           console.log("Enter key pressed without Shift");
           e.preventDefault();
