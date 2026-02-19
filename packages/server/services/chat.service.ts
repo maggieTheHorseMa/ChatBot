@@ -20,6 +20,7 @@ export const chatService = {
             max_output_tokens: 100,
             previous_response_id: ConversationRepository.getLastResponseId(conversationId), // get the last saved message ID for the current conversation
         });
+        console.log('responseeee', response)
         ConversationRepository.setLastResponseId(conversationId, response.id);
         return {
             id: response.id,
